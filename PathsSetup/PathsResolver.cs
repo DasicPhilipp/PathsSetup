@@ -3,7 +3,7 @@ using static System.IO.File;
 
 namespace PathsSetup;
 
-public class PathsResolver
+public class PathsResolver : IPathsResolver
 {
     private readonly string _rootDirectory;
 
