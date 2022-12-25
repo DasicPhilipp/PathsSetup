@@ -12,9 +12,8 @@ public class PathsResolver : IPathsResolver
         _rootDirectory = rootDirectory;
     }
 
-    public void Resolve<T>(T obj)
+    public void Resolve(object obj)
     {
-        if (obj == null) return;
         foreach (PropertyInfo propertyInfo in obj.GetType().GetProperties())
         {
             PathAttribute? pathAttribute = propertyInfo.GetCustomAttribute<PathAttribute>();

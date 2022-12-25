@@ -2,5 +2,5 @@
 
 public interface IPathsResolver
 {
-    public void Resolve<T>(T obj);
+    public void Resolve(object obj);
 }
