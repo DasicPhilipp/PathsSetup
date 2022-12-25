@@ -15,7 +15,7 @@ public class PathsResolverTest
             FolderFilePath = "folder/another folder/test.json",
             PathWithoutAttribute = "test.json"
         };
-        new PathsResolver("").Resolve(testData);
+        new PathsResolver().Resolve(testData);
         new PathsResolver(Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), nameof(PathsResolverTest))).Resolve(testData);
     }
