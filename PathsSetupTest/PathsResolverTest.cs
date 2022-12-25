@@ -13,6 +13,7 @@ public class PathsResolverTest
             FolderPath = "folder/another folder/",
             FilePath = "test.json",
             FolderFilePath = "folder/another folder/test.json",
+            FolderFilePathDisabledRoot = "folder/another folder/test.json",
             PathWithoutAttribute = "test.json"
         };
         new PathsResolver().Resolve(testData);

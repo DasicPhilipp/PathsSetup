@@ -21,9 +21,12 @@ public class PathsResolver : IPathsResolver
             
             string? path = propertyInfo.GetValue(obj)?.ToString();
             if (path == null) continue;
+
+            string mixedPath = Path.Combine(_rootDirectory, path);
+            if (pathAttribute.AddRootFolder) propertyInfo.SetValue(obj, mixedPath);
             
-            CreateDirectory(Path.Combine(_rootDirectory, path));
-            CreateFile(Path.Combine(_rootDirectory, path), pathAttribute.FileOptions);
+            CreateDirectory(mixedPath);
+            CreateFile(mixedPath, pathAttribute.FileOptions);
         }
     }
 
