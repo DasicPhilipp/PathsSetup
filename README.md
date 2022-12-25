@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/dt/PathsSetup?color=g&label=nuget&style=plastic)
 # PathsSetup
 A simple library to generate folders and files from string properties containing paths.
 
