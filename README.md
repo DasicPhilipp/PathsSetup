@@ -52,6 +52,6 @@ Console.WriteLine(data.FilePath);
 Console.WriteLine(data.FolderPath);
 
 // Output:
-  "C:\\ProgramData\\PathsResolverTest\\file.txt"
-  "C:\\ProgramData\\PathsResolverTest\\Folder\\AnotherFolder\\"
+// "C:\\ProgramData\\PathsResolverTest\\file.txt"
+// "C:\\ProgramData\\PathsResolverTest\\Folder\\AnotherFolder\\"
 ```
