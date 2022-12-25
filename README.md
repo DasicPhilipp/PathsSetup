@@ -9,7 +9,7 @@ public class Data
 {
     [Path] public string FilePath { get; init; } = "file.txt";
     
-    // Don't forget that folder paths must end with a slash, otherwise it is a file without an extension
+    // Don't forget that directories must end with a slash, otherwise it is a file without an extension
     [Path] public string FolderPath { get; init; } = "Folder/AnotherFolder/";
 }
 ```
